@@ -15,7 +15,7 @@ public class MyServletContainerInitializer implements ServletContainerInitialize
 
         //logger.info("启动加载自定义的MyServletContainerInitializer");
         System.out.println("启动加载自定义的MyServletContainerInitializer");
-        ServletRegistration.Dynamic testServlet=servletContext.addServlet("servlet4","com.shf.springboot.servlet.Servlet4");
+        ServletRegistration.Dynamic testServlet=servletContext.addServlet("servlet4","com.huayutech.servlet.Servlet4");
         testServlet.setLoadOnStartup(1);
         testServlet.addMapping("/servlet4");
 
